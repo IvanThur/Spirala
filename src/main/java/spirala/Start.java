@@ -59,13 +59,14 @@ public class Start {
 		
 		Boolean run = true;	
 		while(run){
+                        System.out.println("Odaberite akciju");
 			System.out.println("\n1. Dolje desno");
 			System.out.println("2. Dolje lijevo");
 			System.out.println("3. Gore lijevo");
 			System.out.println("4. Gore desno");
 			System.out.println("5. Izlaz");
 
-			switch (Unos.unesiInt(ulaz, "Odaberite akciju")) {
+			switch (Unos.unesiInt(ulaz)) {
 			case 1:
 				if(sat) {DoljeDesno.DoljeDesnoSat(spirala, h);}
 				else{DoljeDesno.DoljeDesno(spirala, h);}
